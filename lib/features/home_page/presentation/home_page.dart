@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:homie_boy_restaurant_app/const/sized_box.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,8 +15,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Column(
         children: [
-       const    Height20(),
-          
+          const SizedBox(
+            height: 100,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -37,7 +37,6 @@ class _HomePageState extends State<HomePage> {
                     switchButton = va;
 
                     setState(() {});
-                    print(switchButton);
                   }),
             ],
           )
