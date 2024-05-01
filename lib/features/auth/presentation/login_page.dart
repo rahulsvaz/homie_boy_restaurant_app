@@ -23,8 +23,6 @@ class _LoginPageState extends State<LoginPage> {
     TextEditingController mobileNumberController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
 
-    
-
     final width = MediaQuery.sizeOf(context).width;
     return Scaffold(
       body: BlocConsumer<AuthBloc, AuthState>(
@@ -32,7 +30,9 @@ class _LoginPageState extends State<LoginPage> {
           if (state is LoginSuccessState) {
             Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(builder: (context) => const HomePage()),
+                MaterialPageRoute(
+                  builder: (context) => const HomePage(),
+                ),
                 (route) => false);
           }
         },
