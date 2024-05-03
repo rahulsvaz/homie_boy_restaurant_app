@@ -31,6 +31,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         final user = User.fromJson(response.data);
         log(user.token!);
         SecureStorage.writeSecureData(user.token!);
+        await SharedPref.writeTokenInSharedPreferences(user.token!);
 
         emit(LoginSuccessState());
       }

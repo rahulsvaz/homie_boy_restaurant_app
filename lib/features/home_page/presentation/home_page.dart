@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:homie_boy_restaurant_app/features/home_page/drawer/drawer_items.dart';
 import 'package:homie_boy_restaurant_app/features/home_page/presentation/ap_drawer.dart';
-import 'package:homie_boy_restaurant_app/features/home_page/presentation/online_status.dart';
 import 'package:homie_boy_restaurant_app/features/home_page/presentation/widgets/app_bar.dart';
-import 'package:http/http.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
